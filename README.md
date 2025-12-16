@@ -1,4 +1,4 @@
-##OS-WW-P-2[office]
+#OS-WW-P-2[office]
 
 #Konfiguracja dla Linux Arch
 
@@ -64,3 +64,5 @@ chmod -R 777 runtime web/assets
    `npm install`
 2. Run the app:
    `npm run dev`
+   
+![image alt](https://github.com/PiotrIT2015/OS-WW-P-2/blob/master/screenshot.jpg)
