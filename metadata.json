@@ -1,0 +1,32 @@
+{
+  "name": "SecureOS Web Desktop",
+  "description": "A web-based desktop environment simulation mimicking a Debian interface with package management and system monitoring tools."
+}
+{
+  "apps": [
+    {
+      "id": "file-explorer",
+      "name": "File Explorer",
+      "icon": "/icons/folder.png",
+      "component": "FileExplorer"
+    },
+    {
+      "id": "settings",
+      "name": "Settings",
+      "icon": "/icons/settings.png",
+      "component": "Settings"
+    }
+    {
+      "id": "network-monitor",
+      "name": "Network Monitor",
+      "icon": "/icons/network-monitor.png",
+      "component": "NetworkMonitor"
+    },
+    {
+      "id": "package-installer",
+      "name": "Package Installer",
+      "icon": "/icons/package-manager.png",
+      "component": "PackageInstaller"
+    }
+  ]
+}
