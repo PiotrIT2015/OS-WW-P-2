@@ -1,6 +1,6 @@
-#OS-WW-P-2[office]
+# OS-WW-P-2[office]
 
-#Konfiguracja dla Linux Arch
+# Konfiguracja dla Linux Arch
 
 # Aktualizacja i instalacja Xorg
 
