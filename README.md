@@ -2,6 +2,8 @@
 
 # Konfiguracja dla Linux Arch
 
+`git clone https://github.com/PiotrIT2015/OS-WW-P-2`
+
 # Aktualizacja i instalacja Xorg
 
 ```
