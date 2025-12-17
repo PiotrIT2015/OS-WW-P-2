@@ -2,7 +2,11 @@
 
 # Konfiguracja dla Linux Arch
 
-`git clone https://github.com/PiotrIT2015/OS-WW-P-2`
+```
+sudo dd if=your.iso of=/dev/sdX bs=4M status=progress oflag=sync`
+sudo pacman -S git
+git clone https://github.com/PiotrIT2015/OS-WW-P-2`
+```
 
 # Aktualizacja i instalacja Xorg
 
