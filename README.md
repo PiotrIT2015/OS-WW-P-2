@@ -69,7 +69,7 @@ chmod -R 777 runtime web/assets
 1. Install dependencies:
    `npm install`
 2. Run the app:
-   `npm run dev` or double click on `OS-2.bat`
+   `npm run dev` or double click on `wwp[office].bat` in MS Windows
    
 ...or:
 
