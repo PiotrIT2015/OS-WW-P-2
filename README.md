@@ -71,4 +71,10 @@ chmod -R 777 runtime web/assets
 2. Run the app:
    `npm run dev` or double click on `OS-2.bat`
    
+...or:
+
+1. docker pull piotrit2015/wwp-office:1.0
+2. docker-compose up -d
+3. docker-compose down
+   
 ![image alt](https://github.com/PiotrIT2015/OS-WW-P-2/blob/master/screenshot.jpg)
