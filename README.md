@@ -75,7 +75,7 @@ chmod -R 777 runtime web/assets
 
 1. `docker pull piotrit2015/wwp-office:1.0`
 2. `docker-compose up -d`
-3. `ocker-compose down`
+3. `docker-compose down`
 
 Apache: `https://localhost:55001`
 phpMyAdmin/MySQL: `https://localhost:55002`
