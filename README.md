@@ -69,6 +69,6 @@ chmod -R 777 runtime web/assets
 1. Install dependencies:
    `npm install`
 2. Run the app:
-   `npm run dev`
+   `npm run dev` or double click on `OS-2.bat`
    
 ![image alt](https://github.com/PiotrIT2015/OS-WW-P-2/blob/master/screenshot.jpg)
