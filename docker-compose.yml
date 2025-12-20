@@ -26,7 +26,7 @@ services:
   # Aplikacja Python
   # =========================
   app:
-    image: piotrit2015/wwp-security:1.0
+    image: piotrit2015/wwp-office:1.0
     container_name: os-ww-p
     restart: unless-stopped
     environment:
