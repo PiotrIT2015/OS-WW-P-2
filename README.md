@@ -75,9 +75,13 @@ chmod -R 777 runtime web/assets
 
 1. `docker pull piotrit2015/wwp-office:1.0`
 2. `docker-compose up -d`
+3. `docker run -p 8080:80 piotrit2015/wwp-office:2.0`
 3. `docker-compose down`
 
-Apache: `https://localhost:55001`
-phpMyAdmin/MySQL: `https://localhost:55002`
+| Co                    | URL                                                  |
+| --------------------- | ---------------------------------------------------- |
+| Aplikacja             | **[http://localhost:55001](http://localhost:55001)** |
+| phpMyAdmin            | **[http://localhost:55002](http://localhost:55002)** |
+| Backend direct (test) | [http://localhost:8080](http://localhost:8080)       |
    
 ![image alt](https://github.com/PiotrIT2015/OS-WW-P-2/blob/master/screenshot.jpg)
