@@ -73,7 +73,7 @@ chmod -R 777 runtime web/assets
    
 ...or:
 
-1. `docker pull piotrit2015/wwp-office:12.0`
+1. `docker pull piotrit2015/wwp-office:2.0`
 2. `docker-compose up -d`
 3. `docker run -p 8080:80 piotrit2015/wwp-office:2.0`
 3. `docker-compose down`
