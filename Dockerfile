@@ -1,15 +1,14 @@
-# ===== BUILD =====
-FROM node:18 AS build
+FROM node:20-alpine AS build
 WORKDIR /app
-COPY . .
+
+COPY package*.json ./
 RUN npm install
+COPY . .
 RUN npm run build
 
-# ===== SERVE =====
-FROM nginx:alpine
-COPY --from=build /app/dist /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+FROM httpd:2.4-alpine
+RUN rm -rf /usr/local/apache2/htdocs/*
+COPY --from=build /app/build/ /usr/local/apache2/htdocs/
 
 
 

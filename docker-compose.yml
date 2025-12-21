@@ -1,7 +1,4 @@
-version: "3.9"
-
 services:
-
   # =========================
   # MySQL
   # =========================
@@ -27,7 +24,7 @@ services:
   # =========================
   app:
     image: piotrit2015/wwp-office:1.0
-    container_name: os-ww-p
+    container_name: wwp-office
     restart: unless-stopped
     environment:
       MYSQL_HOST: db
@@ -38,7 +35,7 @@ services:
       db:
         condition: service_healthy
     expose:
-      - "80"   # widoczne tylko wewnątrz sieci Dockera
+      - "80"
 
   # =========================
   # Apache (reverse proxy)
