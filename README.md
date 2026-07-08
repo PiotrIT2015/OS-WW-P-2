@@ -1,67 +1,77 @@
-# OS-WW-P-2[office]
+# OS-WW-P-2: Office
+## European Open Desktop Platform Proposal
 
-# Konfiguracja dla Linux Arch
+---
 
-```
-sudo dd if=your.iso of=/dev/sdX bs=4M status=progress oflag=sync`
-sudo pacman -S git
-git clone https://github.com/PiotrIT2015/OS-WW-P-2`
-```
+# Overview
 
-# Aktualizacja i instalacja Xorg
+**OS-WW-P-2: Office** is a lightweight, modular desktop operating system concept designed as a proposal for a future European Open Source Operating System (**EU OS**).
 
-```
-sudo pacman -Syu
-sudo pacman -S xorg-server xorg-xinit
-```
+The project focuses on:
 
-# Instalacja Surf (ekstremalnie lekka) oraz sterowników wideo
+- technological independence,
+- open-source software,
+- privacy-oriented computing,
+- low hardware requirements,
+- modular architecture,
+- accessibility,
+- secure office and productivity environments.
 
-# Wybierz sterownik dla swojej karty (intel/amdgpu/vesa)
-`sudo pacman -S surf mesa xf86-video-vesa`
+Unlike traditional desktop operating systems, OS-WW-P-2 uses a minimal Linux foundation combined with modern web technologies to provide a flexible and maintainable user interface.
 
-# Frontend (React/Vite)
-`sudo pacman -S nodejs npm`
+The system is based on:
 
-# Backend (PHP/Yii2)
-`sudo pacman -S php php-apache php-sqlite`
+- **Arch Linux** as the operating system foundation,
+- **React/Vite** as the desktop interface layer,
+- **Yii2/PHP** as the backend service layer.
 
-Wskazówka: W pliku /etc/php/php.ini odkomentuj linie extension=intl, extension=gd oraz extension=pdo_sqlite (lub mysql), aby Yii2 mogło poprawnie pracować.
+---
 
-#[.xinitrc]
+# Vision
 
-```
+The goal of OS-WW-P-2 is to explore the possibility of creating a European-controlled computing platform based entirely on open technologies.
 
-# Wyłączenie wygaszania ekranu i oszczędzania energii
-xset s off
-xset -dpms
-xset s noblank
+The project follows several principles:
 
-# Uruchomienie Twojego serwera Yii2 w tle
-cd ~/sciezka/do/yii2-app
-php yii serve --port=8080 &
+## Digital Sovereignty
 
-# Uruchomienie frontendu Vite w tle
-cd ~/sciezka/do/secureos-web-desktop
-npm run dev &
+Reducing dependence on closed ecosystems by using:
 
-# Czekamy chwilę na wstanie serwerów
-sleep 5
+- open-source components,
+- transparent architecture,
+- community-driven development.
 
-# Uruchomienie Surf w trybie pełnoekranowym (Kiosk Mode)
-# -F (fullscreen), -z (zoom 1.0), -K (blokada klawiszy funkcyjnych)
-exec surf -F -z 1.0 http://localhost:3000
+## Security
 
-```
+The system architecture allows:
 
-#Optymalizacja 
+- minimal attack surface,
+- controlled software stack,
+- easier auditing,
+- isolated services.
 
-```
-cd ~/sciezka/do/yii2-app
-chmod -R 777 runtime web/assets
-```
+## Sustainability
 
-## Run Locally
+The lightweight design enables:
+
+- operation on older hardware,
+- lower energy consumption,
+- longer device lifecycle.
+
+## Accessibility
+
+The platform is designed with accessibility in mind, allowing integration with:
+
+- assistive technologies,
+- alternative input methods,
+- customized user interfaces.
+
+---
+
+# Architecture
+
+OS-WW-P-2 uses a layered architecture:
+
 
 **Prerequisites:**  Node.js
 
